@@ -13,22 +13,23 @@
 
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <!-- Top bar -->
-  <div class="topbar">
-    <div class="topbar__inner">
-      <div class="brand">
-        <div class="brand__dot" aria-hidden="true"></div>
-        <div>
-          <strong>Templo de Adoração Church</strong>
-          <div class="muted small">Um lugar para amar e ser amado</div>
-        </div>
-      </div>
 
-      <nav class="nav">
-        <a href="#sobre">Sobre</a>
+<body>
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top">
+        <span class="brand__dot"></span>
+        <span class="brand__text">
+          <strong>Templo de Adoração Church</strong>
+          <span class="muted small">Um lugar para amar e ser amado</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
         <a href="#visao">Visão</a>
         <a href="#campus">Campus</a>
+        <a href="#galeria">Fotos</a>
         <a href="#redes">Redes</a>
         <a class="nav__cta" href="#contato">WhatsApp</a>
       </nav>
@@ -37,171 +38,153 @@
     </div>
 
     <div class="drawer" id="drawer">
-      <a href="#sobre">Sobre</a>
       <a href="#visao">Visão</a>
       <a href="#campus">Campus</a>
+      <a href="#galeria">Fotos</a>
       <a href="#redes">Redes</a>
       <a href="#contato">WhatsApp</a>
     </div>
-  </div>
+  </header>
 
-  <!-- Hero -->
-  <header class="hero">
-    <div class="hero__bg" aria-hidden="true"></div>
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <!-- Troque a imagem do banner aqui -->
+    <div class="hero__media" style="--hero-img:url('assets/hero.jpg');"></div>
+    <div class="hero__overlay"></div>
 
     <div class="container hero__content">
       <div class="pill reveal">
-        <span class="ping" aria-hidden="true"></span>
+        <span class="ping"></span>
         Campus Monte Sião • MG
       </div>
 
       <h1 class="reveal">
         Templo de Adoração Church
-        <span class="glow">— Um lugar para amar e ser amado.</span>
+        <span class="glow">Um lugar para amar e ser amado.</span>
       </h1>
 
       <p class="lead reveal">
-        Um site direto para sua bio: localização, visão, propósito, redes e contato.
+        Visão • Campus • Fotos • Redes • Contato — pronto para sua bio do Instagram.
       </p>
 
       <div class="hero__buttons reveal">
-        <a class="btn primary" href="#campus">Ver localização</a>
-        <a class="btn" href="#visao">Visão & Propósito</a>
-        <a class="btn" href="#redes">Redes sociais</a>
+        <a class="btn primary" href="#contato">Falar com a secretaria</a>
+        <a class="btn" href="#campus">Ver localização</a>
+        <a class="btn" href="#galeria">Ver fotos</a>
       </div>
 
-      <div class="stats reveal">
-        <div class="stat">
-          <div class="stat__num">4</div>
-          <div class="stat__label">Pilares</div>
-        </div>
-        <div class="stat">
-          <div class="stat__num">1</div>
-          <div class="stat__label">Campus</div>
-        </div>
-        <div class="stat">
-          <div class="stat__num">100%</div>
-          <div class="stat__label">Mobile</div>
-        </div>
+      <div class="hero__chips reveal">
+        <span class="chip">Evangelizar</span>
+        <span class="chip">Restaurar</span>
+        <span class="chip">Discipular</span>
+        <span class="chip">Enviar</span>
       </div>
     </div>
-  </header>
+  </section>
 
   <main class="container">
-    <!-- Sobre -->
-    <section id="sobre" class="section">
+    <!-- VISÃO -->
+    <section id="visao" class="section">
       <div class="section__title reveal">
-        <h2>Sobre</h2>
-        <p class="muted">Essência, direção e clareza — do jeito que fica bom na bio.</p>
+        <h2>Visão & Propósito</h2>
+        <p class="muted">Quatro pilares com base bíblica.</p>
       </div>
 
       <div class="grid grid--2">
         <article class="card reveal">
-          <h3>Quem somos</h3>
-          <p>
-            Somos a <strong>Templo de Adoração Church</strong>, uma família de fé,
-            com um chamado claro: <strong>amar</strong>, <strong>cuidar</strong> e <strong>enviar</strong>.
-          </p>
-          <div class="chips">
-            <span class="chip">Presença</span>
-            <span class="chip">Família</span>
-            <span class="chip">Missão</span>
+          <div class="card__head">
+            <div class="iconCircle">✦</div>
+            <div>
+              <h3>Evangelizar</h3>
+              <p class="muted small">Marcos 16:15</p>
+            </div>
           </div>
+          <p class="verse">
+            “E disse-lhes: Ide por todo o mundo e pregai o evangelho a toda criatura.”
+          </p>
         </article>
 
         <article class="card reveal">
-          <h3>Projeto social</h3>
-          <p>
-            Conheça o projeto da nossa associação:
-            <strong>ATED — Associação Templo de Adoração</strong>.
+          <div class="card__head">
+            <div class="iconCircle">✦</div>
+            <div>
+              <h3>Restaurar</h3>
+              <p class="muted small">João 8:32</p>
+            </div>
+          </div>
+          <p class="verse">
+            “E conhecereis a verdade, e a verdade vos libertará.”
           </p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__head">
+            <div class="iconCircle">✦</div>
+            <div>
+              <h3>Discipular</h3>
+              <p class="muted small">Mateus 28:18–20</p>
+            </div>
+          </div>
+          <p class="verse">
+            “Portanto, vão e façam discípulos de todas as nações... e eu estarei sempre com vocês.”
+          </p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__head">
+            <div class="iconCircle">✦</div>
+            <div>
+              <h3>Enviar</h3>
+              <p class="muted small">João 20:21</p>
+            </div>
+          </div>
+          <p class="verse">
+            “Assim como o Pai me enviou, eu os envio.”
+          </p>
+        </article>
+      </div>
+
+      <div class="card reveal mt">
+        <div class="card__split">
+          <div>
+            <h3>Projeto da associação</h3>
+            <p class="muted">ATED — Associação Templo de Adoração</p>
+          </div>
           <div class="actions">
             <a class="btn" target="_blank" rel="noreferrer" href="https://www.instagram.com/associacaotemplodeadoracao/">Instagram ATED</a>
             <a class="btn" target="_blank" rel="noreferrer" href="https://www.facebook.com/associacaotemplodeadoracao/">Facebook ATED</a>
           </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Visão / Propósito -->
-    <section id="visao" class="section">
-      <div class="section__title reveal">
-        <h2>Visão & Propósito</h2>
-        <p class="muted">Evangelizar • Restaurar • Discipular • Enviar</p>
-      </div>
-
-      <div class="accordion">
-        <button class="acc reveal" data-acc>
-          <span>Evangelizar</span>
-          <span class="muted">Marcos 16:15</span>
-        </button>
-        <div class="panel" data-panel>
-          <p class="verse">
-            “E disse-lhes: Ide por todo o mundo e pregai o evangelho a toda criatura.”
-            <span class="ref">— Marcos 16:15</span>
-          </p>
-        </div>
-
-        <button class="acc reveal" data-acc>
-          <span>Restaurar</span>
-          <span class="muted">João 8:32</span>
-        </button>
-        <div class="panel" data-panel>
-          <p class="verse">
-            “E conhecereis a verdade, e a verdade vos libertará.”
-            <span class="ref">— João 8:32</span>
-          </p>
-        </div>
-
-        <button class="acc reveal" data-acc>
-          <span>Discipular</span>
-          <span class="muted">Mateus 28:18–20</span>
-        </button>
-        <div class="panel" data-panel>
-          <p class="verse">
-            “Foi-me dada toda a autoridade no céu e na terra. Portanto, vão e façam discípulos de todas as nações,
-            batizando-os em nome do Pai e do Filho e do Espírito Santo, ensinando-os a obedecer a tudo o que eu lhes ordenei.
-            E eu estarei sempre com vocês, até o fim dos tempos.”
-            <span class="ref">— Mateus 28:18–20</span>
-          </p>
-        </div>
-
-        <button class="acc reveal" data-acc>
-          <span>Enviar</span>
-          <span class="muted">João 20:21</span>
-        </button>
-        <div class="panel" data-panel>
-          <p class="verse">
-            “Paz seja com vocês! Assim como o Pai me enviou, eu os envio.”
-            <span class="ref">— João 20:21</span>
-          </p>
         </div>
       </div>
     </section>
 
-    <!-- Campus -->
+    <!-- CAMPUS -->
     <section id="campus" class="section">
       <div class="section__title reveal">
-        <h2>Localização do Campus</h2>
+        <h2>Nosso Campus</h2>
         <p class="muted">Rua Alice Cancherine Comparine, 10 — Morro Pelado • Monte Sião/MG</p>
       </div>
 
       <div class="grid grid--2">
         <article class="card reveal">
           <h3>Endereço</h3>
-          <p id="addr">
-            Rua Alice Cancherine Comparine, 10 - Morro Pelado | Monte Sião - MG
-          </p>
+          <p id="addr">Rua Alice Cancherine Comparine, 10 - Morro Pelado | Monte Sião - MG</p>
 
           <div class="actions">
-            <button class="btn" id="copyAddr">Copiar endereço</button>
+            <button class="btn" id="copyAddr">Copiar</button>
             <a class="btn primary" target="_blank" rel="noreferrer"
-               href="https://www.google.com/maps/dir/?api=1&destination=Rua%20Alice%20Cancherine%20Comparine%2010%20Monte%20Si%C3%A3o%20MG">
+              href="https://www.google.com/maps/dir/?api=1&destination=Rua%20Alice%20Cancherine%20Comparine%2010%20Monte%20Si%C3%A3o%20MG">
               Traçar rota
             </a>
           </div>
 
           <div class="toast" id="toast" role="status" aria-live="polite">Endereço copiado!</div>
+
+          <div class="photo mt">
+            <!-- Troque a foto do campus aqui -->
+            <img src="assets/campus.jpg" alt="Foto do Campus" loading="lazy" />
+          </div>
+          <p class="muted small mt2">*Troque a imagem em <code>assets/campus.jpg</code>.</p>
         </article>
 
         <article class="card reveal">
@@ -218,16 +201,39 @@
       </div>
     </section>
 
-    <!-- Redes -->
+    <!-- GALERIA -->
+    <section id="galeria" class="section">
+      <div class="section__title reveal">
+        <h2>Galeria de fotos</h2>
+        <p class="muted">Clique para ampliar. Você só substitui as imagens na pasta <code>assets</code>.</p>
+      </div>
+
+      <div class="gallery">
+        <button class="gItem reveal" data-img="assets/galeria-1.jpg" aria-label="Abrir foto 1">
+          <img src="assets/galeria-1.jpg" alt="Galeria 1" loading="lazy">
+        </button>
+        <button class="gItem reveal" data-img="assets/galeria-2.jpg" aria-label="Abrir foto 2">
+          <img src="assets/galeria-2.jpg" alt="Galeria 2" loading="lazy">
+        </button>
+        <button class="gItem reveal" data-img="assets/galeria-3.jpg" aria-label="Abrir foto 3">
+          <img src="assets/galeria-3.jpg" alt="Galeria 3" loading="lazy">
+        </button>
+        <button class="gItem reveal" data-img="assets/galeria-4.jpg" aria-label="Abrir foto 4">
+          <img src="assets/galeria-4.jpg" alt="Galeria 4" loading="lazy">
+        </button>
+      </div>
+    </section>
+
+    <!-- REDES -->
     <section id="redes" class="section">
       <div class="section__title reveal">
         <h2>Redes sociais</h2>
-        <p class="muted">Clique e vá direto — perfeito pra bio do Instagram.</p>
+        <p class="muted">Links clicáveis.</p>
       </div>
 
       <div class="grid grid--3">
         <a class="card linkCard reveal" target="_blank" rel="noreferrer" href="https://www.instagram.com/templodeadoracaochurch/">
-          <div class="icon">IG</div>
+          <div class="iconTag">IG</div>
           <div>
             <h3>Instagram</h3>
             <p class="muted">@templodeadoracaochurch</p>
@@ -235,24 +241,24 @@
         </a>
 
         <a class="card linkCard reveal" target="_blank" rel="noreferrer" href="https://www.youtube.com/@TemplodeAdoracaoChurchOficial">
-          <div class="icon">YT</div>
+          <div class="iconTag">YT</div>
           <div>
             <h3>YouTube</h3>
             <p class="muted">Templo de Adoração Church Oficial</p>
           </div>
         </a>
 
-        <a class="card linkCard reveal" target="_blank" rel="noreferrer" href="https://www.facebook.com/pages/TA-Church/480053768705306">
-          <div class="icon">FB</div>
+        <a class="card linkCard reveal" target="_blank" rel="noreferrer" href="https://www.facebook.com/TemplodeadoracaochurchMonteSiao">
+          <div class="iconTag">FB</div>
           <div>
             <h3>Facebook</h3>
-            <p class="muted">TA CHURCH</p>
+            <p class="muted">Templo de Adoração Church Monte Sião</p>
           </div>
         </a>
       </div>
     </section>
 
-    <!-- Contato -->
+    <!-- CONTATO -->
     <section id="contato" class="section">
       <div class="section__title reveal">
         <h2>Secretaria</h2>
@@ -278,7 +284,16 @@
     </footer>
   </main>
 
-  <!-- Floating WhatsApp -->
+  <!-- MODAL (ampliar foto) -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" id="modalClose"></div>
+    <div class="modal__content" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+      <img id="modalImg" alt="Imagem ampliada" />
+      <button class="modal__x" id="modalX" aria-label="Fechar">✕</button>
+    </div>
+  </div>
+
+  <!-- FAB WhatsApp -->
   <a class="fab" target="_blank" rel="noreferrer"
      href="https://wa.me/5535992351410?text=Ol%C3%A1!%20Vim%20pelo%20link%20da%20bio%20e%20gostaria%20de%20informa%C3%A7%C3%B5es.">
     WhatsApp
