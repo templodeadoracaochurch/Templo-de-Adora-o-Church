@@ -4,67 +4,286 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Templo de Adoração Church</title>
-  <meta name="description" content="Igreja Templo de Adoração Church — Evangelizar, restaurar, discipular e enviar." />
+  <meta name="description" content="Templo de Adoração Church — Um lugar para amar e ser amado." />
+  <meta name="theme-color" content="#000000" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="wrap">
-    <header class="card hero">
-      <div class="badge">OFICIAL</div>
-      <h1>Templo de Adoração Church</h1>
-      <p class="subtitle">Evangelizar • Restaurar • Discipular • Enviar</p>
-
-      <div class="buttons">
-        <a class="btn" href="https://instagram.com/templodeadoracaochurch" target="_blank" rel="noreferrer">Instagram</a>
-        <a class="btn" href="https://facebook.com/tachurch" target="_blank" rel="noreferrer">Facebook</a>
-        <a class="btn" href="https://www.youtube.com/@templodeadoracaochurchoﬁcial" target="_blank" rel="noreferrer">YouTube</a>
-        <a class="btn primary" href="https://wa.me/55SEUNUMEROAQUI" target="_blank" rel="noreferrer">Falar no WhatsApp</a>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="topbar__inner">
+      <div class="brand">
+        <div class="brand__dot" aria-hidden="true"></div>
+        <div>
+          <strong>Templo de Adoração Church</strong>
+          <div class="muted small">Um lugar para amar e ser amado</div>
+        </div>
       </div>
-    </header>
 
-    <section class="grid">
-      <article class="card">
-        <h2>Visão e Propósito</h2>
-        <p>
-          Nossa visão e propósito é <strong>evangelizar</strong>, <strong>restaurar</strong>,
-          <strong>discipular</strong> e <strong>enviar</strong>.
-        </p>
-      </article>
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#visao">Visão</a>
+        <a href="#campus">Campus</a>
+        <a href="#redes">Redes</a>
+        <a class="nav__cta" href="#contato">WhatsApp</a>
+      </nav>
 
-      <article class="card">
-        <h2>Horários</h2>
-        <ul class="list">
-          <li><strong>Domingo:</strong> 09:00 e 19:00</li>
-          <li><strong>Quinta:</strong> 19:30 (Encontro de Quinta)</li>
-          <li><strong>Outros:</strong> (adicione aqui)</li>
-        </ul>
-        <p class="hint">*Edite os horários conforme sua igreja.</p>
-      </article>
+      <button class="menuBtn" id="menuBtn" aria-label="Abrir menu">☰</button>
+    </div>
 
-      <article class="card">
-        <h2>Endereço</h2>
-        <p>Rua Alice Cancherine Comparine, 10 — Morro Pelado, Monte Sião - MG</p>
-        <a class="link" href="https://www.google.com/maps?q=Rua+Alice+Cancherine+Comparine+10+Monte+Si%C3%A3o+MG" target="_blank" rel="noreferrer">
-          Abrir no Google Maps →
+    <div class="drawer" id="drawer">
+      <a href="#sobre">Sobre</a>
+      <a href="#visao">Visão</a>
+      <a href="#campus">Campus</a>
+      <a href="#redes">Redes</a>
+      <a href="#contato">WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+
+    <div class="container hero__content">
+      <div class="pill reveal">
+        <span class="ping" aria-hidden="true"></span>
+        Campus Monte Sião • MG
+      </div>
+
+      <h1 class="reveal">
+        Templo de Adoração Church
+        <span class="glow">— Um lugar para amar e ser amado.</span>
+      </h1>
+
+      <p class="lead reveal">
+        Um site direto para sua bio: localização, visão, propósito, redes e contato.
+      </p>
+
+      <div class="hero__buttons reveal">
+        <a class="btn primary" href="#campus">Ver localização</a>
+        <a class="btn" href="#visao">Visão & Propósito</a>
+        <a class="btn" href="#redes">Redes sociais</a>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat">
+          <div class="stat__num">4</div>
+          <div class="stat__label">Pilares</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">1</div>
+          <div class="stat__label">Campus</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">100%</div>
+          <div class="stat__label">Mobile</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Sobre -->
+    <section id="sobre" class="section">
+      <div class="section__title reveal">
+        <h2>Sobre</h2>
+        <p class="muted">Essência, direção e clareza — do jeito que fica bom na bio.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card reveal">
+          <h3>Quem somos</h3>
+          <p>
+            Somos a <strong>Templo de Adoração Church</strong>, uma família de fé,
+            com um chamado claro: <strong>amar</strong>, <strong>cuidar</strong> e <strong>enviar</strong>.
+          </p>
+          <div class="chips">
+            <span class="chip">Presença</span>
+            <span class="chip">Família</span>
+            <span class="chip">Missão</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h3>Projeto social</h3>
+          <p>
+            Conheça o projeto da nossa associação:
+            <strong>ATED — Associação Templo de Adoração</strong>.
+          </p>
+          <div class="actions">
+            <a class="btn" target="_blank" rel="noreferrer" href="https://www.instagram.com/associacaotemplodeadoracao/">Instagram ATED</a>
+            <a class="btn" target="_blank" rel="noreferrer" href="https://www.facebook.com/associacaotemplodeadoracao/">Facebook ATED</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Visão / Propósito -->
+    <section id="visao" class="section">
+      <div class="section__title reveal">
+        <h2>Visão & Propósito</h2>
+        <p class="muted">Evangelizar • Restaurar • Discipular • Enviar</p>
+      </div>
+
+      <div class="accordion">
+        <button class="acc reveal" data-acc>
+          <span>Evangelizar</span>
+          <span class="muted">Marcos 16:15</span>
+        </button>
+        <div class="panel" data-panel>
+          <p class="verse">
+            “E disse-lhes: Ide por todo o mundo e pregai o evangelho a toda criatura.”
+            <span class="ref">— Marcos 16:15</span>
+          </p>
+        </div>
+
+        <button class="acc reveal" data-acc>
+          <span>Restaurar</span>
+          <span class="muted">João 8:32</span>
+        </button>
+        <div class="panel" data-panel>
+          <p class="verse">
+            “E conhecereis a verdade, e a verdade vos libertará.”
+            <span class="ref">— João 8:32</span>
+          </p>
+        </div>
+
+        <button class="acc reveal" data-acc>
+          <span>Discipular</span>
+          <span class="muted">Mateus 28:18–20</span>
+        </button>
+        <div class="panel" data-panel>
+          <p class="verse">
+            “Foi-me dada toda a autoridade no céu e na terra. Portanto, vão e façam discípulos de todas as nações,
+            batizando-os em nome do Pai e do Filho e do Espírito Santo, ensinando-os a obedecer a tudo o que eu lhes ordenei.
+            E eu estarei sempre com vocês, até o fim dos tempos.”
+            <span class="ref">— Mateus 28:18–20</span>
+          </p>
+        </div>
+
+        <button class="acc reveal" data-acc>
+          <span>Enviar</span>
+          <span class="muted">João 20:21</span>
+        </button>
+        <div class="panel" data-panel>
+          <p class="verse">
+            “Paz seja com vocês! Assim como o Pai me enviou, eu os envio.”
+            <span class="ref">— João 20:21</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campus -->
+    <section id="campus" class="section">
+      <div class="section__title reveal">
+        <h2>Localização do Campus</h2>
+        <p class="muted">Rua Alice Cancherine Comparine, 10 — Morro Pelado • Monte Sião/MG</p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card reveal">
+          <h3>Endereço</h3>
+          <p id="addr">
+            Rua Alice Cancherine Comparine, 10 - Morro Pelado | Monte Sião - MG
+          </p>
+
+          <div class="actions">
+            <button class="btn" id="copyAddr">Copiar endereço</button>
+            <a class="btn primary" target="_blank" rel="noreferrer"
+               href="https://www.google.com/maps/dir/?api=1&destination=Rua%20Alice%20Cancherine%20Comparine%2010%20Monte%20Si%C3%A3o%20MG">
+              Traçar rota
+            </a>
+          </div>
+
+          <div class="toast" id="toast" role="status" aria-live="polite">Endereço copiado!</div>
+        </article>
+
+        <article class="card reveal">
+          <h3>Mapa</h3>
+          <div class="map">
+            <iframe
+              title="Mapa do Campus"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Rua%20Alice%20Cancherine%20Comparine%2010%20Monte%20Si%C3%A3o%20MG&output=embed">
+            </iframe>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Redes -->
+    <section id="redes" class="section">
+      <div class="section__title reveal">
+        <h2>Redes sociais</h2>
+        <p class="muted">Clique e vá direto — perfeito pra bio do Instagram.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <a class="card linkCard reveal" target="_blank" rel="noreferrer" href="https://www.instagram.com/templodeadoracaochurch/">
+          <div class="icon">IG</div>
+          <div>
+            <h3>Instagram</h3>
+            <p class="muted">@templodeadoracaochurch</p>
+          </div>
         </a>
-      </article>
 
-      <article class="card">
-        <h2>Pedidos de oração</h2>
-        <p>Quer que a gente ore por você? Clique e envie seu pedido.</p>
-        <a class="btn" href="https://wa.me/55SEUNUMEROAQUI?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20de%20oração." target="_blank" rel="noreferrer">
-          Enviar pedido
+        <a class="card linkCard reveal" target="_blank" rel="noreferrer" href="https://www.youtube.com/@TemplodeAdoracaoChurchOficial">
+          <div class="icon">YT</div>
+          <div>
+            <h3>YouTube</h3>
+            <p class="muted">Templo de Adoração Church Oficial</p>
+          </div>
         </a>
-      </article>
+
+        <a class="card linkCard reveal" target="_blank" rel="noreferrer" href="https://www.facebook.com/pages/TA-Church/480053768705306">
+          <div class="icon">FB</div>
+          <div>
+            <h3>Facebook</h3>
+            <p class="muted">TA CHURCH</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section">
+      <div class="section__title reveal">
+        <h2>Secretaria</h2>
+        <p class="muted">WhatsApp com mensagem pronta.</p>
+      </div>
+
+      <div class="card reveal">
+        <div class="contactRow">
+          <div>
+            <h3>WhatsApp</h3>
+            <p class="muted">+55 (35) 99235-1410</p>
+          </div>
+          <a class="btn primary" target="_blank" rel="noreferrer"
+             href="https://wa.me/5535992351410?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Templo%20de%20Adora%C3%A7%C3%A3o%20Church%20e%20gostaria%20de%20informa%C3%A7%C3%B5es.">
+            Chamar agora
+          </a>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Templo de Adoração Church • Todos os direitos reservados</p>
+      <div class="muted small">© <span id="year"></span> Templo de Adoração Church • Um lugar para amar e ser amado</div>
     </footer>
   </main>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <!-- Floating WhatsApp -->
+  <a class="fab" target="_blank" rel="noreferrer"
+     href="https://wa.me/5535992351410?text=Ol%C3%A1!%20Vim%20pelo%20link%20da%20bio%20e%20gostaria%20de%20informa%C3%A7%C3%B5es.">
+    WhatsApp
+  </a>
+
+  <script src="app.js"></script>
 </body>
 </html>
